@@ -243,7 +243,7 @@ WINDOW_HEIGHT = 480
 
 window_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
-BACKGROUND_COLOR = (255, 255, 255)  # define a white background color
+BACKGROUND_COLOR = (255, 255, 255) 
 
 window_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 background = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
@@ -255,7 +255,6 @@ BEST_SCORE_TEXT_RECT = pygame.Rect(10, 70, 200, 50)
 manager = pygame_gui.UIManager((WINDOW_WIDTH, WINDOW_HEIGHT))
 score_text = pygame_gui.elements.UITextBox("Score: 0", relative_rect=SCORE_TEXT_RECT, manager=manager)
 best_score_text = pygame_gui.elements.UITextBox("Best Score: 0", relative_rect=BEST_SCORE_TEXT_RECT, manager=manager)
-# создаем менеджер и элементы пользовательского интерфейса
 
 my_manager = pygame_gui.UIManager((WINDOW_WIDTH, WINDOW_HEIGHT))
 score_text = pygame_gui.elements.UITextBox("Score: 0", relative_rect=SCORE_TEXT_RECT, manager=my_manager)
@@ -264,7 +263,6 @@ best_score_text = pygame_gui.elements.UITextBox("Best Score: 0", relative_rect=B
 for event in pygame.event.get():
     if event.type == pygame.QUIT:
         playing = False
-    # передаем события в менеджер
     my_manager.process_events(event)
 
 clock = pygame.time.Clock()
