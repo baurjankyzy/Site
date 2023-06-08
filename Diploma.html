@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Узнай свой будущий заработок</title>
+    <link rel="stylesheet" href="scratch_3.css">
+
+  </head>
+  <body>
+    <header>
+      <img src="/Users/kundyz/Downloads/лого.jpeg" alt="Университет">
+      <img src="/Users/kundyz/Downloads/eng.jpeg" alt="Факультет инженерии">
+    </header>
+    <h1>Узнай свой заработок</h1>
+    <div class="buttons">
+      <button class="button" id="vtipo-button">ВТиПО</button>
+      <button class="button" id="is-button">ИС</button>
+      <button class="button" id="math-button">Научная математика</button>
+    </div>
+
+    <div class="subjects-math">
+      <h2>Предметы для научной математики</h2>
+      <div class="subject">
+        <h2>Physics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_physics', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_physics', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_physics', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_physics', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_physics', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_physics', 0)">Не было</button>
+          <input type="hidden" id="math_physics_Grade">
+
+
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Linear algebra</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_linear_algebra', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_linear_algebra', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_linear_algebra', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_linear_algebra', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_linear_algebra', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_linear_algebra', 0)">Не было</button>
+          <input type="hidden" id="math_linear_algebra_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Analytic Geometry</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_analytic_geometry', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_analytic_geometry', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_analytic_geometry', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_analytic_geometry', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_analytic_geometry', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_analytic_geometry', 0)">Не было</button>
+          <input type="hidden" id="math_analytic_geometry_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematical analysis 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_math_analysis_1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_1', 0)">Не было</button>
+          <input type="hidden" id="math_math_analysis_1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematical analysis 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_math_analysis_2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_2', 0)">Не было</button>
+          <input type="hidden" id="math_math_analysis_2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematical analysis 3</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_math_analysis_3', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_3', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_3', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_3', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_3', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_3', 0)">Не было</button>
+          <input type="hidden" id="math_math_analysis_3_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematical analysis 4</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_math_analysis_4', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_4', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_4', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_4', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_4', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_math_analysis_4', 0)">Не было</button>
+          <input type="hidden" id="math_math_analysis_4_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Introductory mathematics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_intro_math', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_intro_math', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_intro_math', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_intro_math', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_intro_math', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_intro_math', 0)">Не было</button>
+          <input type="hidden" id="math_intro_math_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>English Language 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_eng_1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_eng_1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_eng_1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_eng_1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_eng_1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_eng_1', 0)">Не было</button>
+          <input type="hidden" id="math_eng_1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>English Language 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_eng_2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_eng_2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_eng_2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_eng_2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_eng_2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_eng_2', 0)">Не было</button>
+          <input type="hidden" id="math_eng_2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Turkish Language 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_tur_1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_tur_1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_tur_1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_tur_1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_tur_1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_tur_1', 0)">Не было</button>
+          <input type="hidden" id="math_tur_1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Turkish Language 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_tur_2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_tur_2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_tur_2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_tur_2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_tur_2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_tur_2', 0)">Не было</button>
+          <input type="hidden" id="math_tur_2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Modern History of Kazakhstan</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_history', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_history', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_history', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_history', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_history', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_history', 0)">Не было</button>
+          <input type="hidden" id="math_history_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Information and Communication Technologies</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_ict', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_ict', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_ict', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_ict', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_ict', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_ict', 0)">Не было</button>
+          <input type="hidden" id="math_ict_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Algebra</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_algebra', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_algebra', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_algebra', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_algebra', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_algebra', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_algebra', 0)">Не было</button>
+          <input type="hidden" id="math_algebra_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Additional chapters of linear algebra</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_add', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_add', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_add', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_add', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_add', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_add', 0)">Не было</button>
+          <input type="hidden" id="math_add_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Educational practice</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_edu_practice', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_edu_practice', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_edu_practice', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_edu_practice', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_edu_practice', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_edu_practice', 0)">Не было</button>
+          <input type="hidden" id="math_edu_practice_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Programming for Mathematics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_programming', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_programming', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_programming', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_programming', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_programming', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_programming', 0)">Не было</button>
+          <input type="hidden" id="math_programming_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Discrete Mathematics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_discrete', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_discrete', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_discrete', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_discrete', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_discrete', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_discrete', 0)">Не было</button>
+          <input type="hidden" id="math_discrete_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2> Abstract Algebra</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_abstract', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_abstract', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_abstract', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_abstract', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_abstract', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_abstract', 0)">Не было</button>
+          <input type="hidden" id="math_abstract_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2> Ordinary differential equations</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_ode', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_ode', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_ode', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_ode', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_ode', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_ode', 0)">Не было</button>
+          <input type="hidden" id="math_ode_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2> Professional oriented foreign language</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_prof_ofl', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_prof_ofl', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_prof_ofl', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_prof_ofl', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_prof_ofl', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_prof_ofl', 0)">Не было</button>
+          <input type="hidden" id="math_prof_ofl_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2> Philosophy</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('math_philosophy', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('math_philosophy', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('math_philosophy', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('math_philosophy', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('math_philosophy', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('math_philosophy', 0)">Не было</button>
+          <input type="hidden" id="math_philosophy_Grade">
+        </div>
+            <button class="result_math" onclick="calculate_math()">Узнать результат</button>
+            <p class = 'text_result' id = "salary_math"></p>
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="subjects-is">
+      <h2>Предметы для ИС</h2>
+      <div class="subject">
+        <h2>Fundamentals of Programming</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_fundamental_programming', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_fundamental_programming', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_fundamental_programming', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_fundamental_programming', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_fundamental_programming', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_fundamental_programming', 0)">Не было</button>
+          <input type="hidden" id="is_fundamental_programming_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Physics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_physics', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_physics', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_physics', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_physics', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_physics', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_physics', 0)">Не было</button>
+          <input type="hidden" id="is_physics_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Linear Algebra</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_linear_algebra', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_linear_algebra', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_linear_algebra', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_linear_algebra', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_linear_algebra', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_linear_algebra', 0)">Не было</button>
+          <input type="hidden" id="is_linear_algebra_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematics for Computer Sciences 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_mfcs1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_mfcs1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_mfcs1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_mfcs1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_mfcs1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_mfcs1', 0)">Не было</button>
+          <input type="hidden" id="is_mfcs1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematics for Computer Sciences 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_mfcs2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_mfcs2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_mfcs2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_mfcs2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_mfcs2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_mfcs2', 0)">Не было</button>
+          <input type="hidden" id="is_mfcs2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>English Language 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_en1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_en1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_en1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_en1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_en1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_en1', 0)">Не было</button>
+          <input type="hidden" id="is_en1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>English Language 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_en2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_en2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_en2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_en2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_en2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_en2', 0)">Не было</button>
+          <input type="hidden" id="is_en2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Turkish Language 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_tur1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_tur1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_tur1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_tur1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_tur1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_tur1', 0)">Не было</button>
+          <input type="hidden" id="is_tur1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Turkish Language 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_tur2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_tur2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_tur2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_tur2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_tur2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_tur2', 0)">Не было</button>
+          <input type="hidden" id="is_tur2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Programming Technologies and Educational Practice</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_programming_tech_edu_practice', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_programming_tech_edu_practice', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_programming_tech_edu_practice', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_programming_tech_edu_practice', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_programming_tech_edu_practice', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_programming_tech_edu_practice', 0)">Не было</button>
+          <input type="hidden" id="is_programming_tech_edu_practice_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Information and Communications Technologies(Computer Sciences)</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_ict_cs', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_ict_cs', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_ict_cs', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_ict_cs', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_ict_cs', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_ict_cs', 0)">Не было</button>
+          <input type="hidden" id="is_ict_cs_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Discrete Mathematics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_discrete', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_discrete', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_discrete', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_discrete', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_discrete', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_discrete', 0)">Не было</button>
+          <input type="hidden" id="is_discrete_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Introduction to Algorithms</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_intro_algo', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_intro_algo', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_intro_algo', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_intro_algo', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_intro_algo', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_intro_algo', 0)">Не было</button>
+          <input type="hidden" id="is_intro_algo_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Database Management Systems 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_database1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_database1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_database1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_database1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_database1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_database1', 0)">Не было</button>
+          <input type="hidden" id="is_database1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Database Management Systems 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_database2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_database2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_database2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_database2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_database2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_database2', 0)">Не было</button>
+          <input type="hidden" id="is_database2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Web Programming: front end</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_front', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_front', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_front', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_front', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_front', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_front', 0)">Не было</button>
+          <input type="hidden" id="is_front_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Web Programming: back end</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_back', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_back', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_back', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_back', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_back', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_back', 0)">Не было</button>
+          <input type="hidden" id="is_back_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2> Philosophy</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_philosophy', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_philosophy', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_philosophy', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_philosophy', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_philosophy', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_philosophy', 0)">Не было</button>
+          <input type="hidden" id="is_philosophy_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Advanced Algorithms</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_advanced_algo', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_advanced_algo', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_advanced_algo', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_advanced_algo', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_advanced_algo', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_advanced_algo', 0)">Не было</button>
+          <input type="hidden" id="is_advanced_algo_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Modern History of Kazakhstan</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('is_history', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('is_history', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('is_history', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('is_history', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('is_history', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('is_history', 0)">Не было</button>
+          <input type="hidden" id="is_history_Grade">
+        </div>
+            <button class="result_is" onclick="calculate_is()">Узнать результат</button>
+            <p class = 'text_result' id = "salary_is"></p>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="subjects-vtipo">
+      <h2>Предметы для ВТиПО</h2>
+      <div class="subject">
+        <h2>Physics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_physics', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_physics', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_physics', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_physics', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_physics', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_physics', 0)">Не было</button>
+          <input type="hidden" id="vtipo_physics_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Linear algebra</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_linear_algebra', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_linear_algebra', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_linear_algebra', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_linear_algebra', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_linear_algebra', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_linear_algebra', 0)">Не было</button>
+          <input type="hidden" id="vtipo_linear_algebra_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Programming Technologies</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_programming_tech', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_programming_tech', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_programming_tech', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_programming_tech', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_programming_tech', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_programming_tech', 0)">Не было</button>
+          <input type="hidden" id="vtipo_programming_tech_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematical analysis 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_math_an_1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_1', 0)">Не было</button>
+          <input type="hidden" id="vtipo_math_an_1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mathematical analysis 2</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_math_an_2', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_2', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_2', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_2', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_2', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_math_an_2', 0)">Не было</button>
+          <input type="hidden" id="vtipo_math_an_2_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Mobile Programming</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_mobile_programming', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_mobile_programming', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_mobile_programming', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_mobile_programming', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_mobile_programming', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_mobile_programming', 0)">Не было</button>
+          <input type="hidden" id="vtipo_mobile_programming_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Introduction to Algorithms</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_intro_to_algo', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_intro_to_algo', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_intro_to_algo', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_intro_to_algo', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_intro_to_algo', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_intro_to_algo', 0)">Не было</button>
+          <input type="hidden" id="vtipo_intro_to_algo_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Web programming fundamentals</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_web_programming_fundamental', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_web_programming_fundamental', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_web_programming_fundamental', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_web_programming_fundamental', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_web_programming_fundamental', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_web_programming_fundamental', 0)">Не было</button>
+          <input type="hidden" id="vtipo_web_programming_fundamental_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>English Language</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_en', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_en', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_en', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_en', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_en', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_en', 0)">Не было</button>
+          <input type="hidden" id="vtipo_en_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>3D modeling</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_3d', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_3d', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_3d', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_3d', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_3d', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_3d', 0)">Не было</button>
+          <input type="hidden" id="vtipo_3d_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Turkish Language</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_turkish', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_turkish', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_turkish', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_turkish', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_turkish', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_turkish', 0)">Не было</button>
+          <input type="hidden" id="vtipo_turkish_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Electronics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_electronic', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_electronic', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_electronic', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_electronic', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_electronic', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_electronic', 0)">Не было</button>
+          <input type="hidden" id="vtipo_electronic_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Modern History of Kazakhstan</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_history', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_history', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_history', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_history', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_history', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_history', 0)">Не было</button>
+          <input type="hidden" id="vtipo_history_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Information and Communication Technologies</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_ict', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_ict', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_ict', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_ict', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_ict', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_ict', 0)">Не было</button>
+          <input type="hidden" id="vtipo_ict_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Computer Networks 1</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_comp_networks1', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_comp_networks1', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_comp_networks1', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_comp_networks1', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_comp_networks1', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_comp_networks1', 0)">Не было</button>
+          <input type="hidden" id="vtipo_comp_networks1_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Probability and Mathematical Statistics</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_probability_and_math_statistics', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_probability_and_math_statistics', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_probability_and_math_statistics', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_probability_and_math_statistics', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_probability_and_math_statistics', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_probability_and_math_statistics', 0)">Не было</button>
+          <input type="hidden" id="vtipo_probability_and_math_statistics_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Educational practice</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_edu_practice', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_edu_practice', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_edu_practice', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_edu_practice', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_edu_practice', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_edu_practice', 0)">Не было</button>
+          <input type="hidden" id="vtipo_edu_practice_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Database Management Systems</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_database', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_database', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_database', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_database', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_database', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_database', 0)">Не было</button>
+          <input type="hidden" id="vtipo_database_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Advanced Algorithms</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_advanced_algo', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_advanced_algo', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_advanced_algo', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_advanced_algo', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_advanced_algo', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_advanced_algo', 0)">Не было</button>
+          <input type="hidden" id="vtipo_advanced_algo_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Digital Design</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_digital_design', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_digital_design', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_digital_design', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_digital_design', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_digital_design', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_digital_design', 0)">Не было</button>
+          <input type="hidden" id="vtipo_digital_design_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Professional oriented foreign language</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_prof_oriented_foreign_lan', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_prof_oriented_foreign_lan', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_prof_oriented_foreign_lan', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_prof_oriented_foreign_lan', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_prof_oriented_foreign_lan', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_prof_oriented_foreign_lan', 0)">Не было</button>
+          <input type="hidden" id="vtipo_prof_oriented_foreign_lan_Grade">
+        </div>
+      </div>
+      <div class="subject">
+        <h2>Philosophy</h2>
+        <div class="c-buttons">
+          <button class="c-button" onclick="setGrade('vtipo_philosophy', 1)">50-60</button>
+          <button class="c-button" onclick="setGrade('vtipo_philosophy', 2)">60-70</button>
+          <button class="c-button" onclick="setGrade('vtipo_philosophy', 3)">70-80</button>
+          <button class="c-button" onclick="setGrade('vtipo_philosophy', 4)">80-90</button>
+          <button class="c-button" onclick="setGrade('vtipo_philosophy', 5)">90-100</button>
+          <button class="c-button" onclick="setGrade('vtipo_philosophy', 0)">Не было</button>
+          <input type="hidden" id="vtipo_philosophy_Grade">
+        </div>
+          <button class="result_vtipo" onclick="calculate_vtipo()">Узнать результат</button>
+            <p class = 'text_result' id = "salary_vtipo"></p>
+
+      </div>
+
+    </div>
+
+
+    <script src="scratch_4.js"></script>
+
+
+
+  </body>
+</html>
+
